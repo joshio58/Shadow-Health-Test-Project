@@ -47,12 +47,4 @@ const Sidebar = ({ isSideBarActive }) => {
 	)
 }
 
-// export const query = graphql`
-// 	{
-// 		markdownRemark {
-// 			html
-// 		}
-// 	}
-// `
-
 export default Sidebar
