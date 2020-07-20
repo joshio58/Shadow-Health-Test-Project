@@ -1,0 +1,62 @@
+.sidebar {
+	// background: hsl(0, 0%, 80%);
+	position: fixed;
+	top: 0;
+	// left: 100%;
+	right: 0%;
+	bottom: 0;
+	width: 30vw;
+	display: flex;
+
+	// @media @max_tablet {
+	// 	top: 100%;
+	// 	left: 0;
+	// }
+
+	&__content-container {
+		padding: 0.5em 1.5em;
+		// .dbi;
+		overflow-y: scroll;
+	}
+
+	&__toggle-btn {
+		background: hsl(205deg 73% 81%);
+		position: absolute;
+		top: 0;
+		right: 100%;
+		width: 30px;
+		padding: 1em;
+		height: 100%;
+		display: flex;
+
+		&__text {
+			position: absolute;
+			top: 30px;
+			right: 50%;
+			width: 5em;
+			background: hsl(205deg 73% 81%);
+			padding: 1em;
+			border-radius: 20px;
+			.josefin;
+			color: @text_black;
+			// display: block;
+			// transform: rotate(270deg);
+
+			// writing-mode: vertical-rl;
+			// text-orientation: upright;
+		}
+	}
+
+	p,
+	li {
+		.josefin;
+		// .kanit;
+		// .exo;
+		font-size: 18px;
+		line-height: 1.5em;
+	}
+
+	li {
+		margin-bottom: 1em;
+	}
+}

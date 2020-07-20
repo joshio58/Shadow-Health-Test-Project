@@ -1,0 +1,31 @@
+.bs(@y:3px, @b:8px) {
+	box-shadow: 0 @y @b 0 hsla(0, 0%, 0%, 0.5);
+}
+
+// Breakpoints
+// ------------------------- Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+@highdensity: ~'only screen and (-webkit-min-device-pixel-ratio: 1.5)',
+	~'only screen and (min--moz-device-pixel-ratio: 1.5)',
+	~'only screen and (-o-min-device-pixel-ratio: 3/2)',
+	~'only screen and (min-device-pixel-ratio: 1.5)';
+@mobile: ~'only screen and (max-width: 600px)';
+@tablet: ~'only screen and (min-width: 601px) and (max-width: 949px)';
+@max_tablet: ~'only screen and (max-width: 949px)';
+@min_tablet: ~'only screen and (min-width: 601px)';
+@desktop: ~'only screen and (min-width: 950px) and (max-width: 1200px)';
+@max_desktop: ~'only screen and (max-width: 1200px)';
+@min_desktop: ~'only screen and (min-width: 950px)';
+@desktop-xl: ~'only screen and (min-width: 1129px)';
+
+// element specific
+
+@media @highdensity {
+}
+@media @mobile {
+}
+@media @tablet {
+}
+@media @desktop {
+}
+@media @desktop-xl {
+}

@@ -1,0 +1,514 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/exo2/v9/7cH1v4okm5zmbvwkAx_sfcEuiD8jYPWcPg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/exo2/v9/7cH1v4okm5zmbvwkAx_sfcEuiD8jWfWcPg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v16/Qw3JZQNVED7rKGKxtqIqX5EUCGZ2dIn0FyA96fCTaoVhKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v16/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Kanit SemiBold Italic'), local('Kanit-SemiBoldItalic'), url(https://fonts.gstatic.com/s/kanit/v6/nKKS-Go6G5tXcraQI92kVaQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Kanit SemiBold'), local('Kanit-SemiBold'), url(https://fonts.gstatic.com/s/kanit/v6/nKKU-Go6G5tXcr5KPyWg.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+}
+h1 {
+  font-size: 2.5em;
+  margin: 1em 0;
+}
+h2 {
+  font-size: 2.2em;
+  margin: 0.9em 0;
+}
+h3 {
+  font-size: 1.9em;
+  margin: 0.8em 0;
+}
+h4 {
+  font-size: 1.6em;
+  margin: 0.6em 0;
+}
+h5 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+h6 {
+  font-size: 1.4em;
+  margin: 0.4em 0;
+}
+p {
+  margin: 0.8em 0;
+  line-height: 1.3em;
+}
+.btn {
+  border: none;
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+  padding: 1em;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+ul li {
+  list-style: none;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.container {
+  width: 100%;
+}
+.container > * {
+  margin: 0 auto;
+}
+.header {
+  background-color: hsl(249deg 100% 92%);
+  margin-bottom: 1em;
+}
+.header__main {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__main h1 {
+  font-size: 2em;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  bottom: 0;
+  width: 30vw;
+  display: flex;
+}
+.sidebar__content-container {
+  padding: 0.5em 1.5em;
+  overflow-y: scroll;
+}
+.sidebar__toggle-btn {
+  background: hsl(205deg 73% 81%);
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 30px;
+  padding: 1em;
+  height: 100%;
+  display: flex;
+}
+.sidebar__toggle-btn__text {
+  position: absolute;
+  top: 30px;
+  right: 50%;
+  width: 5em;
+  background: hsl(205deg 73% 81%);
+  padding: 1em;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  color: hsl(0, 0%, 8%);
+}
+.sidebar p,
+.sidebar li {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+.sidebar li {
+  margin-bottom: 1em;
+}
+.performance-widget {
+  background: hsl(0, 0%, 100%);
+  border: 3px solid hsl(205deg 86% 41%);
+  border-radius: 2em;
+  max-width: 600px;
+  flex: 1 1 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 8px 0 hsla(0, 0%, 0%, 0.5);
+  overflow: hidden;
+}
+.performance-widget__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.performance-widget__title--main {
+  position: relative;
+  margin: 0;
+  font-size: 3.2em;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  background-color: hsl(205deg 66% 61%);
+  border-bottom: 3px solid hsl(205deg 86% 41%);
+  color: hsl(0, 0%, 92%);
+  overflow: hidden;
+  box-shadow: 0 3px 8px 0 hsla(0, 0%, 0%, 0.5);
+}
+.performance-widget__title--main__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.performance-widget__title--main h2 {
+  position: relative;
+  font-size: 1em;
+  z-index: 2;
+}
+.performance-widget__title--sub {
+  margin: 0;
+  background: #ffffff;
+  transform: translateY(-1em);
+  border-radius: 0.5em;
+  padding: 0.3em 2em;
+  box-shadow: 0 3px 8px 0 hsla(0, 0%, 0%, 0.5);
+}
+.performance-widget__title--sub__cat-name {
+  color: hsl(0, 0%, 92%);
+  padding: 0.5em 0.3em 0.3em 0.3em;
+  border-radius: 50%;
+  line-height: 0.9em;
+  display: inline-block;
+}
+.performance-widget__content {
+  padding: 1.5em 1em 0.2em 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.student-list {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 1em);
+  padding: 1em 0;
+  position: relative;
+}
+.student-bar {
+  border: 1px solid hsl(0, 0%, 8%);
+  border-radius: 30px;
+  margin-bottom: 1.5em;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 8px 0 hsla(0, 0%, 0%, 0.5);
+}
+.student-bar__upper-bar {
+  position: relative;
+  padding: 0.5em 2em;
+  height: 3em;
+  z-index: 2;
+}
+.student-bar__lower-bar {
+  position: relative;
+  padding: 0 0 1em 0;
+  height: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 -0.4em;
+  z-index: 1;
+}
+.student-bar h5 {
+  margin: 0;
+  position: absolute;
+  padding: 0.5em 1em 0.2em 1em;
+  bottom: 0;
+  left: 1em;
+  z-index: 5;
+  transform: translateY(1px);
+  background-color: hsl(0, 0%, 92%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid hsl(105, 82%, 29%);
+  border-bottom: none;
+}
+.student-bar .key {
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+  font-size: 0.8em;
+}
+.student-bar .value {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.student-bar__data {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  position: relative;
+  background: hsl(0, 0%, 92%);
+  border: 1px solid hsl(105, 82%, 29%);
+  padding: 0.8em;
+  z-index: 10;
+}
+.student-bar__data > li {
+  padding: 0.1em;
+}
+.student-bar__data--spi {
+  color: hsl(106, 86%, 23%);
+}
+.student-bar__data--sdc {
+  color: hsl(346, 81%, 36%);
+}
+.student-bar__data--odc {
+  color: hsl(226, 87%, 18%);
+}
+.student-bar__data--ee {
+  color: hsl(346, 40%, 46%);
+}
+.student-bar__progress-bar {
+  position: absolute;
+  height: 100%;
+  top: 2px;
+  left: 0;
+  z-index: 1;
+}
+.student-bar__progress-bar--filter {
+  backdrop-filter: invert(70%);
+  z-index: 100;
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+.sort-by .btn {
+  color: hsl(0, 0%, 92%);
+}
+.sort-by .btn-spi {
+  background-color: hsl(106, 86%, 23%);
+}
+.sort-by .btn-spi:hover {
+  background-color: hsl(106, 86%, 33%);
+}
+.sort-by .btn-sdc {
+  background-color: hsl(346, 81%, 36%);
+}
+.sort-by .btn-sdc:hover {
+  background-color: hsl(346, 81%, 46%);
+}
+.sort-by .btn-odc {
+  background-color: hsl(226, 87%, 18%);
+}
+.sort-by .btn-odc:hover {
+  background-color: hsl(226, 87%, 28%);
+}
+.sort-by .btn-ee {
+  background-color: hsl(346, 40%, 46%);
+}
+.sort-by .btn-ee:hover {
+  background-color: hsl(346, 40%, 56%);
+}
+.markdown-content ul {
+  padding-left: 1em;
+}
+.markdown-content ul li {
+  list-style: circle;
+  margin-bottom: 0.5em;
+}
+.md-abstract {
+  padding: 1em;
+  border: 1px solid hsl(20 10% 10%);
+}
+.img-resp {
+  max-width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */
